@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 }
 
 // $sql = "SELECT id, value1, value2, value3, reading_time FROM Sensor order by reading_time desc limit 40";
-$sql = "SELECT id, value1, readingTime FROM Sensor order by reading_time desc limit 40";
+$sql = "SELECT id, value1, readingTime FROM Sensor order by readingTime desc limit 40";
 
 $result = $conn->query($sql);
 
@@ -53,10 +53,10 @@ $value1 = json_encode(array_reverse(array_column($sensor_data, 'value1')), JSON_
 // $value3 = json_encode(array_reverse(array_column($sensor_data, 'value3')), JSON_NUMERIC_CHECK);
 $reading_time = json_encode(array_reverse($readings_time), JSON_NUMERIC_CHECK);
 
-/*echo $value1;
-echo $value2;
-echo $value3;
-echo $reading_time;*/
+// echo $value1;
+// echo $value2;
+// echo $value3;
+// echo $reading_time;
 
 $result->free();
 $conn->close();
