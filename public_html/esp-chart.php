@@ -18,7 +18,7 @@ $dbname = "esp_data";
 // REPLACE with Database user
 $username = "root";
 // REPLACE with Database user password
-$password = "634630";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
